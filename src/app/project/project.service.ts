@@ -78,7 +78,17 @@ export class ProjectService {
         ensuring seamless user experience across devices.`,
         technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
         link: 'https://65eda318acb6fd649b30ccfb--effervescent-gaufre-e8db6b.netlify.app/',
-      }
+      },
+      {
+        projectId: 8,
+        title: 'Blogging Application',
+        imageLink: 'assets/image.png',
+        description: `Developed a dynamic restaurant menu using HTML, CSS, JavaScript, and Bootstrap. 
+        Implemented menu filters for easy navigation and quick item access. Designed a responsive layout, 
+        ensuring seamless user experience across devices.`,
+        technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+        link: 'https://65eda318acb6fd649b30ccfb--effervescent-gaufre-e8db6b.netlify.app/',
+      },
     ]
   }
 
