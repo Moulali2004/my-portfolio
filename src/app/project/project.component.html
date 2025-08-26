@@ -1,0 +1,14 @@
+<div class="container py-3 mt-5">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+    <div class="col" *ngFor="let project of projectData">
+      <div class="card m-3">
+        <img [src]="project.imageLink" class="card-img-top" alt="Blog Cover Image">
+        <div class="card-body">
+          <h5 class="card-title">{{project.title}}</h5>
+          <a [routerLink]="['/project', project.projectId]" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

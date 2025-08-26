@@ -1,0 +1,27 @@
+<div class="container py-3 my-5">
+  <h2 class="text-center">My Skills</h2>
+
+  <div *ngFor="let category of skillCategories" class="mb-5">
+    <h4 class="mb-3 text-primary border-bottom pb-2">{{ category.category }}</h4>
+    
+    <div class="row">
+      <div class="col-md-6 mb-4" *ngFor="let skill of category.skills">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">{{ skill.name }}</h5>
+            <div class="progress">
+              <div class="progress-bar bg-primary"
+                   role="progressbar"
+                   [style.width.%]="skill.percentage"
+                   [attr.aria-valuenow]="skill.percentage"
+                   aria-valuemin="0"
+                   aria-valuemax="100">
+                {{ skill.percentage }}%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="container py-5 my-4 project-detail">
+  <!-- Title -->
+  <h2 class="text-center mb-5 display-5 fw-bold text-primary">{{ project.title }}</h2>
+
+  <!-- Project Image -->
+  <div class="text-center mb-5">
+    <img [src]="project.imageLink" alt="{{ project.title }}"
+         class="img-fluid rounded shadow-lg project-img" />
+  </div>
+
+  <!-- Description -->
+  <div class="mb-5">
+    <p class="lead text-muted text-center px-md-5">
+      {{ project.description }}
+    </p>
+  </div>
+
+  <!-- Tech Stack -->
+  <div class="mb-5 text-center">
+    <h4 class="fw-semibold mb-3 text-secondary">Tech Stack</h4>
+    <div>
+      <span *ngFor="let tech of project.technologies"
+            class="badge bg-dark me-2 mb-2 px-3 py-2">
+        {{ tech }}
+      </span>
+    </div>
+  </div>
+
+  <!-- Buttons -->
+  <div class="text-center">
+    <a [href]="project.link" target="_blank" class="btn btn-success btn-lg px-4 me-3 shadow-sm">
+      Live At
+    </a>
+    <a [href]="project.code" target="_blank" class="btn btn-dark btn-lg px-4 shadow-sm">
+      Code At
+    </a>
+  </div>
+</div>

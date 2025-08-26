@@ -1,0 +1,28 @@
+.project-detail {
+  max-width: 900px;
+  margin: 0 auto; /* centers the content */
+}
+
+.project-img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.badge {
+  font-size: 1rem;
+  border-radius: 1rem;
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #0d6efd, #6c63ff);
+  color: #fff !important;
+}
+
+.btn {
+  border-radius: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
