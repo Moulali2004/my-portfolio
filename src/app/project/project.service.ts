@@ -12,7 +12,7 @@ export class ProjectService {
       {
         projectId: 1,
         title: 'MyRestaurant Menu',
-        imageLink: '../../assets/image.png',
+        imageLink: 'assets/image.png',
         description: `Developed a dynamic restaurant menu using HTML, CSS, JavaScript, and Bootstrap. 
         Implemented menu filters for easy navigation and quick item access. Designed a responsive layout, 
         ensuring seamless user experience across devices.`,
@@ -22,7 +22,7 @@ export class ProjectService {
       {
         projectId: 2,
         title: 'MyRestaurant Menu',
-        imageLink: '../../assets/image.png',
+        imageLink: 'assets/image.png',
         description: `Developed a dynamic restaurant menu using HTML, CSS, JavaScript, and Bootstrap. 
         Implemented menu filters for easy navigation and quick item access. Designed a responsive layout, 
         ensuring seamless user experience across devices.`,
@@ -32,7 +32,7 @@ export class ProjectService {
       {
         projectId: 3,
         title: 'MyRestaurant Menu',
-        imageLink: '../../assets/image.png',
+        imageLink: 'assets/image.png',
         description: `Developed a dynamic restaurant menu using HTML, CSS, JavaScript, and Bootstrap. 
         Implemented menu filters for easy navigation and quick item access. Designed a responsive layout, 
         ensuring seamless user experience across devices.`,
@@ -42,7 +42,7 @@ export class ProjectService {
       {
         projectId: 4,
         title: 'MyRestaurant Menu',
-        imageLink: '../../assets/image.png',
+        imageLink: 'assets/image.png',
         description: `Developed a dynamic restaurant menu using HTML, CSS, JavaScript, and Bootstrap. 
         Implemented menu filters for easy navigation and quick item access. Designed a responsive layout, 
         ensuring seamless user experience across devices.`,
@@ -52,7 +52,7 @@ export class ProjectService {
       {
         projectId: 5,
         title: 'MyRestaurant Menu',
-        imageLink: '../../assets/image.png',
+        imageLink: 'assets/image.png',
         description: `Developed a dynamic restaurant menu using HTML, CSS, JavaScript, and Bootstrap. 
         Implemented menu filters for easy navigation and quick item access. Designed a responsive layout, 
         ensuring seamless user experience across devices.`,
@@ -62,7 +62,7 @@ export class ProjectService {
       {
         projectId: 6,
         title: 'MyRestaurant Menu',
-        imageLink: '../../assets/image.png',
+        imageLink: 'assets/image.png',
         description: `Developed a dynamic restaurant menu using HTML, CSS, JavaScript, and Bootstrap. 
         Implemented menu filters for easy navigation and quick item access. Designed a responsive layout, 
         ensuring seamless user experience across devices.`,
@@ -72,7 +72,7 @@ export class ProjectService {
       {
         projectId: 7,
         title: 'MyRestaurant Menu',
-        imageLink: '../../assets/image.png',
+        imageLink: 'assets/image.png',
         description: `Developed a dynamic restaurant menu using HTML, CSS, JavaScript, and Bootstrap. 
         Implemented menu filters for easy navigation and quick item access. Designed a responsive layout, 
         ensuring seamless user experience across devices.`,
