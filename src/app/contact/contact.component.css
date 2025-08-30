@@ -1,22 +1,36 @@
-h2 {
-  font-size: 2.2rem;
+/* Contact form + info styling */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-form .form-control {
-  border-radius: 0.6rem;
-  box-shadow: none;
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-form .form-control:focus {
+/* Input fields */
+.form-control:focus {
   border-color: #0d6efd;
-  box-shadow: 0 0 6px rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.25);
+}
+
+/* Social icons */
+.social-link {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+.social-link:hover {
+  transform: scale(1.2);
+  color: #0d6efd !important;
 }
 
 .btn-primary {
-  border-radius: 0.6rem;
-  font-weight: 500;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
 }
 
-.card {
-  border-radius: 1rem;
+.btn-primary:hover {
+  background-color: var(--color-secondary);
 }

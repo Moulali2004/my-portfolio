@@ -1,6 +1,8 @@
 <div class="container py-5 my-4 project-detail">
   <!-- Title -->
-  <h2 class="text-center mb-5 display-5 fw-bold text-primary">{{ project.title }}</h2>
+  <h2 class="text-center mb-5 display-5 fw-bold text-gradient">
+    {{ project.title }}
+  </h2>
 
   <!-- Project Image -->
   <div class="text-center mb-5">
@@ -17,10 +19,10 @@
 
   <!-- Tech Stack -->
   <div class="mb-5 text-center">
-    <h4 class="fw-semibold mb-3 text-secondary">Tech Stack</h4>
+    <h4 class="fw-semibold mb-4 text-secondary">Tech Stack</h4>
     <div>
       <span *ngFor="let tech of project.technologies"
-            class="badge bg-dark me-2 mb-2 px-3 py-2">
+            class="badge tech-badge me-2 mb-2 px-3 py-2 shadow-sm">
         {{ tech }}
       </span>
     </div>
@@ -28,11 +30,24 @@
 
   <!-- Buttons -->
   <div class="text-center">
-    <a [href]="project.link" target="_blank" class="btn btn-success btn-lg px-4 me-3 shadow-sm">
-      Live At
+    <!-- Live At Button -->
+    <a [href]="project.liveLink || null" 
+       target="_blank"
+       class="btn btn-live btn-lg px-4 me-3 shadow-sm"
+       [class.disabled]="!project.liveLink"
+       [attr.title]="!project.liveLink ? 'This project is not deployed. Please check the code.' : ''"
+       [attr.tabindex]="!project.liveLink ? -1 : null">
+      🚀 Live Demo
     </a>
-    <a [href]="project.code" target="_blank" class="btn btn-dark btn-lg px-4 shadow-sm">
-      Code At
+
+    <!-- Code At Button -->
+    <a [href]="project.codeLink || null" 
+       target="_blank"
+       class="btn btn-code btn-lg px-4 shadow-sm"
+       [class.disabled]="!project.codeLink"
+       [attr.title]="!project.codeLink ? 'Code is not available for this project.' : ''"
+       [attr.tabindex]="!project.codeLink ? -1 : null">
+      💻 View Code
     </a>
   </div>
 </div>

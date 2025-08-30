@@ -1,0 +1,76 @@
+/* Ensure circular image always */
+.profile-img {
+  width: 800px;
+  height: 500px;
+  object-fit: cover;
+  border: 5px solid #fff; /* white border for elegance */
+}
+
+/* Gradient Heading */
+.text-gradient {
+  background: linear-gradient(90deg, #0d6efd, #20c997);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Badge Styling */
+.badge-custom {
+  display: inline-block;
+  padding: 10px 18px;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 1.5px solid #dee2e6;
+  background: #f8f9fa;
+  color: #212529;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  text-align: center;
+}
+
+.badge-custom:hover {
+  background: #0d6efd;
+  color: #fff;
+  transform: scale(1.05);
+  border-color: #0d6efd;
+}
+
+/* Special Resume Badge */
+.resume-badge {
+  background: #0d6efd;
+  color: #fff;
+  border-color: #0d6efd;
+}
+.resume-badge:hover {
+  background: #084298;
+  border-color: #084298;
+}
+
+/* Profile Image Animation */
+.profile-img {
+  transition: transform 0.4s ease;
+}
+.profile-img:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+/* Glow Circle */
+.glow-circle {
+  width: 320px; 
+  height: 320px; 
+  z-index: -1; 
+  filter: blur(50px);
+}
+
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-secondary);
+}
+

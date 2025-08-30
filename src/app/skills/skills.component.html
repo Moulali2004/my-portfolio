@@ -1,22 +1,33 @@
-<div class="container py-3 my-5">
-  <h2 class="text-center">My Skills</h2>
+<div class="container py-5 my-5">
+  <h2 class="text-center fw-bold mb-4">💡 My Skills</h2>
+  <p class="text-center text-muted mb-5">
+    A showcase of my technical expertise and tools I frequently use.
+  </p>
 
   <div *ngFor="let category of skillCategories" class="mb-5">
-    <h4 class="mb-3 text-primary border-bottom pb-2">{{ category.category }}</h4>
-    
-    <div class="row">
-      <div class="col-md-6 mb-4" *ngFor="let skill of category.skills">
-        <div class="card shadow-sm">
+    <!-- Category Title -->
+    <h4 class="mb-4 text-primary fw-semibold border-bottom pb-2">
+      <i class="bi bi-star-fill me-2 text-warning"></i> {{ category.category }}
+    </h4>
+
+    <div class="row g-4">
+      <div class="col-md-6" *ngFor="let skill of category.skills">
+        <div class="card h-100 shadow-sm border-0 rounded-3 skill-card">
           <div class="card-body">
-            <h5 class="card-title">{{ skill.name }}</h5>
-            <div class="progress">
-              <div class="progress-bar bg-primary"
+            <!-- Skill name -->
+            <h6 class="fw-bold mb-3 d-flex justify-content-between">
+              {{ skill.name }}
+              <span class="text-muted small">{{ skill.percentage }}%</span>
+            </h6>
+
+            <!-- Progress bar -->
+            <div class="progress rounded-pill" style="height: 10px;">
+              <div class="progress-bar bg-gradient"
                    role="progressbar"
                    [style.width.%]="skill.percentage"
                    [attr.aria-valuenow]="skill.percentage"
                    aria-valuemin="0"
                    aria-valuemax="100">
-                {{ skill.percentage }}%
               </div>
             </div>
           </div>

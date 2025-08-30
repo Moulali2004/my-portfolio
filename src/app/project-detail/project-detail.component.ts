@@ -14,6 +14,7 @@ export class ProjectDetailComponent {
   constructor(private projectService: ProjectService, private route: ActivatedRoute) {
 
   }
+  
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {

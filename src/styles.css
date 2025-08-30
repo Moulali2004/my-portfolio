@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap');
+
+:root {
+  /* Colors */
+  --color-primary: #2563EB;
+  --color-secondary: #14B8A6;
+  --color-accent: #F43F5E;
+  --color-bg-light: #F9FAFB;
+  --color-bg-dark: #111827;
+  --color-text-primary: #1F2937;
+  --color-text-muted: #6B7280;
+
+  /* Fonts */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* Global Typography */
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg-light);
+  color: var(--color-text-primary);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+p, a, span, li, button {
+  font-family: var(--font-body);
+}
